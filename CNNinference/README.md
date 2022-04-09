@@ -49,7 +49,7 @@ data  Debug  Default  HEAAN  lib  result  run  src
 ```
 It might be much easy to configure and build the project.  
 
-In the 'Default' folder, you can run our programming by the following command lines:
+After that, in the 'Default' folder, you can run our project by the following command lines:
 
 ```sh
 # make clean
@@ -57,7 +57,7 @@ In the 'Default' folder, you can run our programming by the following command li
 # ./CNNinference
 ``` 
 
-You can change the source codes and then repeat above lines to debug your own programming.
+You can change the source codes and then repeat the above lines to debug your own project.
 
 ## Running a test source code
 
@@ -66,7 +66,7 @@ In the 'Default' folder, you can find two running results:
 'CNNinferArchiveFile20220409.7z_SetNumThreads(42)_nohup.out'
 
 
-Welcome to run this project, enjoy it!
+ Welcome to run this project, enjoy it!
+ 
 
-by 西星 者, 宫本新野, John C. Smith
-at 2022-04-09 13:12 GMT+08
+
