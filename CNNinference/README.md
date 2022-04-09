@@ -71,7 +71,9 @@ In the 'Default' folder, you can find two running results:
   
   
 Also, you can find the CSV file storing the weights of our well-trained CNN inference model at:
-            /HE.CNNinfer/blob/main/CNNinference/data/CNNweightsMNIST.csv
+        HE.CNNinfer/CNNinference/data/CNNweightsMNIST.csv
+
+
             
             
      
