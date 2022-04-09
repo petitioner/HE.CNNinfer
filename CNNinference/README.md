@@ -43,8 +43,10 @@ On a Ubuntu cloud, our implementation requires the following libraries in order:
 ### Running CNNinference 
 
 You need to configure and build the CNNinference project. If on a Ubuntu 22.04 x64 you placed the project in the path:
-        /home/john/eclipse-workspace/CNNinference/$ls
-        data  Debug  Default  HEAAN  lib  result  run  src}
+```sh
+/home/john/eclipse-workspace/CNNinference/$ls
+data  Debug  Default  HEAAN  lib  result  run  src
+```
 It might be much easy to configure and build the project.  
 
 In the 'Default' folder, you can run our programming by the following command lines:
