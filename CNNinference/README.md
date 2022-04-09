@@ -66,6 +66,11 @@ In the 'Default' folder, you can find two running results:
 'CNNinferArchiveFile20220407.7z_SetNumThreads(42)_nohup.out'  
 
 'CNNinferArchiveFile20220409.7z_SetNumThreads(42)_nohup.out'
+  
+  
+Also, you can find the parameters of well-trained CNN inference model at:
+     ~/HE.CNNinfer/blob/main/CNNinference/data/CNNweightsMNIST.csv
+     
 
 
 
