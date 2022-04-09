@@ -63,11 +63,12 @@ You can change the source codes and then repeat the above lines to debug your ow
 
 In the 'Default' folder, you can find two running results:   
 
-'CNNinferArchiveFile20220407.7z_SetNumThreads(42)_nohup.out'
+'CNNinferArchiveFile20220407.7z_SetNumThreads(42)_nohup.out'  
+
 'CNNinferArchiveFile20220409.7z_SetNumThreads(42)_nohup.out'
 
 
- Welcome to run this project, enjoy it!
+
  
 
 
