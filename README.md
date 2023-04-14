@@ -1,6 +1,6 @@
 # CNNinference
 
-CNNinference is a project for implementing our CNN inference on  encrypted MNIST images (A Novel Matrix-Encoding Method for Privacy-Preserving Neural Networks (Inference) )
+CNNinference is a project for implementing our CNN inference on  encrypted MNIST images (Volley Revolver: A Novel Matrix-Encoding Method for Privacy-Preserving Neural Networks (Inference) )
 
 ## How to run this program? 
 
