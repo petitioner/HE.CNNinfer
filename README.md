@@ -1,6 +1,6 @@
 # There is NO ';' after NTL_EXEC_RANGE... 
         such as at line 697 from HE.CNNinfer/CNNinference/src/Methods.cpp 
-        This is probably why the program is not running in parallel.
+        
 
 # CNNinference
 
