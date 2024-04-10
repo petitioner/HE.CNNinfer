@@ -1,3 +1,6 @@
+# Bugs Found: There is NO ';' after NTL_EXEC_RANGE... That is why the program didn't run in parallel.
+        such as at line 697 from HE.CNNinfer/CNNinference/src/Methods.cpp 
+
 # CNNinference
 
 CNNinference is a project for implementing our CNN inference on  encrypted MNIST images (Volley Revolver: A Novel Matrix-Encoding Method for Privacy-Preserving Neural Networks (Inference) )
