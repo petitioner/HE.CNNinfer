@@ -28,3 +28,5 @@ src/%.o: ../src/%.cpp
 	g++ -I$(INCLUDE_DIR) -I$(HEAAN_INCLUDE_DIR) -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
+
+
