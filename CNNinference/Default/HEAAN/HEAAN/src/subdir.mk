@@ -57,12 +57,13 @@ CPP_DEPS += \
 ./HEAAN/HEAAN/src/TestScheme.d \
 ./HEAAN/HEAAN/src/TimeUtils.d 
 
-
-
+	
 # Each subdirectory must supply rules for building sources it contributes
-$(PROJECT_ROOT)/HEAAN/HEAAN/src/%.o: $(PROJECT_ROOT)/HEAAN/HEAAN/src/%.cpp
+HEAAN/HEAAN/src/%.o: ../HEAAN/HEAAN/src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler 4 Testing'
 	g++ -I"$(PROJECT_ROOT)/HEAAN/HEAAN/src" -I"$(PROJECT_ROOT)/lib/include" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
+
+
