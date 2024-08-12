@@ -2,6 +2,9 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+# Define the project root path
+PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/../../..)
+
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../HEAAN/HEAAN/src/BootContext.cpp \
@@ -55,10 +58,11 @@ CPP_DEPS += \
 ./HEAAN/HEAAN/src/TimeUtils.d 
 
 
+
 # Each subdirectory must supply rules for building sources it contributes
-HEAAN/HEAAN/src/%.o: ../HEAAN/HEAAN/src/%.cpp
+$(PROJECT_ROOT)/HEAAN/HEAAN/src/%.o: $(PROJECT_ROOT)/HEAAN/HEAAN/src/%.cpp
 	@echo 'Building file: $<'
-	@echo 'Invoking: GCC C++ Compiler 4 TesTing'
-	g++ -I"/root/HE.CNNinfer/CNNinference/HEAAN/HEAAN/src" -I"/root/HE.CNNinfer/CNNinference/lib/include" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Invoking: GCC C++ Compiler 4 Testing'
+	g++ -I"$(PROJECT_ROOT)/HEAAN/HEAAN/src" -I"$(PROJECT_ROOT)/lib/include" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
