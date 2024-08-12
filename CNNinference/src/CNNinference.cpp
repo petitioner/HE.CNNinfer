@@ -1,4 +1,5 @@
 #include <NTL/BasicThreadPool.h>
+#include <thread>
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
@@ -18,7 +19,20 @@ using namespace NTL;
 
 int main(int argc, char **argv) {
 
-	SetNumThreads(42);
+	// Get the number of hardware threads available on the current system
+	unsigned int numThreads = thread::hardware_concurrency();
+	if (numThreads == 0) {
+		cerr << "Unable to get the number of hardware threads." << endl;
+		return EXIT_FAILURE;
+	}
+
+	// Print the number of hardware threads
+	cout << "Number of hardware threads available: " << numThreads << endl;
+
+	// Set the number of threads in NTL to the number of hardware threads
+	SetNumThreads(numThreads + 2);
+
+	
 
 
 	//string trainfile = "../data/FASHION-MNISTtrain(28x28).csv";
