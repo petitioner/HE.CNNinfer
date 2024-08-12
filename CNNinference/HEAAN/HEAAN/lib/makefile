@@ -6,6 +6,19 @@
 
 RM := rm -rf
 
+# Define the project root path
+PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/../../..)
+
+# Directories
+SRC_DIR := $(PROJECT_ROOT)/HEAAN/HEAAN/src
+INCLUDE_DIR := $(PROJECT_ROOT)/lib/include
+LIB_DIR := $(PROJECT_ROOT)/lib
+
+# Compiler and flags
+AR := ar
+ARFLAGS := r
+CXXFLAGS := -I$(INCLUDE_DIR) -std=c++11 -O2 -g -Wall
+
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/subdir.mk
@@ -44,13 +57,13 @@ all: libHEAAN.a
 libHEAAN.a: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC Archiver'
-	ar -r  "libHEAAN.a" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(AR) $(ARFLAGS) "libHEAAN.a" $(OBJS) $(USER_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(ARCHIVES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) libHEAAN.a
+	-$(RM) $(CC_DEPS) $(C++_DEPS) $(ARCHIVES) $(C_UPPER_DEPS) $(CXX_DEPS) $(OBJS) $(CPP_DEPS) $(C_DEPS) libHEAAN.a
 	-@echo ' '
 
 .PHONY: all clean dependents
