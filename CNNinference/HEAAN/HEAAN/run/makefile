@@ -1,7 +1,7 @@
 # This sample should be run after make libHEAAN.a file in lib folder
 
 # Define the project root path (assumes this Makefile is in a directory under the project root)
-PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/../../..)
+PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/../../../..)
 
 # Directories
 LIB_DIR := $(PROJECT_ROOT)/lib
