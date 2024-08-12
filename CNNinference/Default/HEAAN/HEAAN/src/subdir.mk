@@ -2,69 +2,63 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-# Define the project root path
-PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/../../../../../..)
-
-# Directories
-SRC_DIR := $(PROJECT_ROOT)/HEAAN/HEAAN/src
-INCLUDE_DIR := $(PROJECT_ROOT)/lib/include
-
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-$(SRC_DIR)/BootContext.cpp \
-$(SRC_DIR)/Ciphertext.cpp \
-$(SRC_DIR)/EvaluatorUtils.cpp \
-$(SRC_DIR)/HEAAN.cpp \
-$(SRC_DIR)/Key.cpp \
-$(SRC_DIR)/Plaintext.cpp \
-$(SRC_DIR)/Ring.cpp \
-$(SRC_DIR)/RingMultiplier.cpp \
-$(SRC_DIR)/Scheme.cpp \
-$(SRC_DIR)/SchemeAlgo.cpp \
-$(SRC_DIR)/SecretKey.cpp \
-$(SRC_DIR)/SerializationUtils.cpp \
-$(SRC_DIR)/StringUtils.cpp \
-$(SRC_DIR)/TestScheme.cpp \
-$(SRC_DIR)/TimeUtils.cpp 
+../HEAAN/HEAAN/src/BootContext.cpp \
+../HEAAN/HEAAN/src/Ciphertext.cpp \
+../HEAAN/HEAAN/src/EvaluatorUtils.cpp \
+../HEAAN/HEAAN/src/HEAAN.cpp \
+../HEAAN/HEAAN/src/Key.cpp \
+../HEAAN/HEAAN/src/Plaintext.cpp \
+../HEAAN/HEAAN/src/Ring.cpp \
+../HEAAN/HEAAN/src/RingMultiplier.cpp \
+../HEAAN/HEAAN/src/Scheme.cpp \
+../HEAAN/HEAAN/src/SchemeAlgo.cpp \
+../HEAAN/HEAAN/src/SecretKey.cpp \
+../HEAAN/HEAAN/src/SerializationUtils.cpp \
+../HEAAN/HEAAN/src/StringUtils.cpp \
+../HEAAN/HEAAN/src/TestScheme.cpp \
+../HEAAN/HEAAN/src/TimeUtils.cpp 
 
 OBJS += \
-$(SRC_DIR)/BootContext.o \
-$(SRC_DIR)/Ciphertext.o \
-$(SRC_DIR)/EvaluatorUtils.o \
-$(SRC_DIR)/HEAAN.o \
-$(SRC_DIR)/Key.o \
-$(SRC_DIR)/Plaintext.o \
-$(SRC_DIR)/Ring.o \
-$(SRC_DIR)/RingMultiplier.o \
-$(SRC_DIR)/Scheme.o \
-$(SRC_DIR)/SchemeAlgo.o \
-$(SRC_DIR)/SecretKey.o \
-$(SRC_DIR)/SerializationUtils.o \
-$(SRC_DIR)/StringUtils.o \
-$(SRC_DIR)/TestScheme.o \
-$(SRC_DIR)/TimeUtils.o 
+./HEAAN/HEAAN/src/BootContext.o \
+./HEAAN/HEAAN/src/Ciphertext.o \
+./HEAAN/HEAAN/src/EvaluatorUtils.o \
+./HEAAN/HEAAN/src/HEAAN.o \
+./HEAAN/HEAAN/src/Key.o \
+./HEAAN/HEAAN/src/Plaintext.o \
+./HEAAN/HEAAN/src/Ring.o \
+./HEAAN/HEAAN/src/RingMultiplier.o \
+./HEAAN/HEAAN/src/Scheme.o \
+./HEAAN/HEAAN/src/SchemeAlgo.o \
+./HEAAN/HEAAN/src/SecretKey.o \
+./HEAAN/HEAAN/src/SerializationUtils.o \
+./HEAAN/HEAAN/src/StringUtils.o \
+./HEAAN/HEAAN/src/TestScheme.o \
+./HEAAN/HEAAN/src/TimeUtils.o 
 
 CPP_DEPS += \
-$(SRC_DIR)/BootContext.d \
-$(SRC_DIR)/Ciphertext.d \
-$(SRC_DIR)/EvaluatorUtils.d \
-$(SRC_DIR)/HEAAN.d \
-$(SRC_DIR)/Key.d \
-$(SRC_DIR)/Plaintext.d \
-$(SRC_DIR)/Ring.d \
-$(SRC_DIR)/RingMultiplier.d \
-$(SRC_DIR)/Scheme.d \
-$(SRC_DIR)/SchemeAlgo.d \
-$(SRC_DIR)/SecretKey.d \
-$(SRC_DIR)/SerializationUtils.d \
-$(SRC_DIR)/StringUtils.d \
-$(SRC_DIR)/TestScheme.d \
-$(SRC_DIR)/TimeUtils.d 
+./HEAAN/HEAAN/src/BootContext.d \
+./HEAAN/HEAAN/src/Ciphertext.d \
+./HEAAN/HEAAN/src/EvaluatorUtils.d \
+./HEAAN/HEAAN/src/HEAAN.d \
+./HEAAN/HEAAN/src/Key.d \
+./HEAAN/HEAAN/src/Plaintext.d \
+./HEAAN/HEAAN/src/Ring.d \
+./HEAAN/HEAAN/src/RingMultiplier.d \
+./HEAAN/HEAAN/src/Scheme.d \
+./HEAAN/HEAAN/src/SchemeAlgo.d \
+./HEAAN/HEAAN/src/SecretKey.d \
+./HEAAN/HEAAN/src/SerializationUtils.d \
+./HEAAN/HEAAN/src/StringUtils.d \
+./HEAAN/HEAAN/src/TestScheme.d \
+./HEAAN/HEAAN/src/TimeUtils.d 
+
 
 # Each subdirectory must supply rules for building sources it contributes
-%.o: $(SRC_DIR)/%.cpp
+HEAAN/HEAAN/src/%.o: ../HEAAN/HEAAN/src/%.cpp
 	@echo 'Building file: $<'
-	@echo 'Invoking: GCC C++ Compiler 4 TTesTT'
-	g++ -I$(INCLUDE_DIR) -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Invoking: GCC C++ Compiler 4 TesTing'
+	g++ -I"/root/HE.CNNinfer/CNNinference/HEAAN/HEAAN/src" -I"/root/HE.CNNinfer/CNNinference/lib/include" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
