@@ -13,7 +13,7 @@ PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/..)
 SRC_DIR := $(PROJECT_ROOT)/src
 INCLUDE_DIR := $(PROJECT_ROOT)/lib/include
 HEAAN_INCLUDE_DIR := $(PROJECT_ROOT)/HEAAN/HEAAN/src
-LIB_DIR := $(PROJECT_ROOT)/lib
+LIB_DIR := $(PROJECT_ROOT)/lib/lib
 HEAAN_LIB_DIR := $(PROJECT_ROOT)/HEAAN/HEAAN/lib
 
 # Compiler and flags
