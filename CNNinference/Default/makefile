@@ -7,7 +7,7 @@
 RM := rm
 
 # Define the project root path
-PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/../../../..)
+PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/..)
 
 # Directories
 SRC_DIR := $(PROJECT_ROOT)/src
