@@ -6,6 +6,13 @@
 
 RM := rm
 
+# Define the project root path
+PROJECT_ROOT := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+
+# Directories
+LIB_DIR := $(PROJECT_ROOT)/lib
+HEAAN_LIB_DIR := $(PROJECT_ROOT)/HEAAN/HEAAN/lib
+
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/subdir.mk
@@ -38,8 +45,6 @@ endif
 
 -include ../makefile.defs
 
-# Add inputs and outputs from these tool invocations to the build variables 
-
 # All Target
 all: CNNinference 
 
@@ -47,13 +52,13 @@ all: CNNinference
 CNNinference: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/john/eclipse-workspace/CNNinference/lib/lib" -L"/home/john/eclipse-workspace/CNNinference/HEAAN/HEAAN/lib" -pthread -o "CNNinference" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L$(LIB_DIR) -L$(HEAAN_LIB_DIR) -pthread -o "CNNinference" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) CNNinference
+	-$(RM) $(CC_DEPS) $(C++_DEPS) $(EXECUTABLES) $(C_UPPER_DEPS) $(CXX_DEPS) $(OBJS) $(CPP_DEPS) $(C_DEPS) CNNinference
 	-@echo ' '
 
 .PHONY: all clean dependents
