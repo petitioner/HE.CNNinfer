@@ -3,7 +3,7 @@
 ################################################################################
 
 # Define the project root path
-PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/../../..)
+PROJECT_ROOT := $(abspath $(dir $(firstword $(MAKEFILE_LIST)))/..)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
